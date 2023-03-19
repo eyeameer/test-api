@@ -5,10 +5,13 @@ const connectDB = require('./db/connect');
 require('dotenv').config();
 const notFound = require('./middleware/not-found');
 const errorHandlerMiddleware = require('./middleware/error-handler');
-
+const cors=require('cors')
+app.use(cors(
+  {
+    origin:'https://t-mangerrr.netlify.app/'
+  }
+))
 // middleware
-
-
 app.use(express.json());
 
 // routes
