@@ -8,7 +8,7 @@ const errorHandlerMiddleware = require('./middleware/error-handler');
 const cors=require('cors')
 app.use(cors(
   {
-    origin:'https://t-mangerrr.netlify.app/'
+    origin:'*'
   }
 ))
 // middleware
